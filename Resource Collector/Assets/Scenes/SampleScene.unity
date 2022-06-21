@@ -1976,54 +1976,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!1 &1026178393
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1026178395}
-  - component: {fileID: 1026178394}
-  m_Layer: 0
-  m_Name: ResourcesSetup
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1026178394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026178393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b2306df8b55a934582d906a2be9aafe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _keys: 000000000100000002000000
-  _values:
-  - {fileID: 611000603263744123}
-  - {fileID: 4298687044164852889}
-  - {fileID: 186465095480259603}
---- !u!4 &1026178395
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026178393}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.314493, y: 2.8458357, z: -5.649731}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1052374732 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -6243401991192168206, guid: 96cc91f50ab28fe41a2ec19f23a274db, type: 3}
@@ -3181,6 +3133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 32685436}
+  _defaultResource: {fileID: 611000602790088672, guid: 71c06b7edb7a3984a993c5b9197fe0d6, type: 3}
 --- !u!1001 &1566998349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3288,7 +3241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ba695dd4a451347be9381b4f162f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _resourcesSetup: {fileID: 1026178394}
+  _resourcesSetup: {fileID: 11400000, guid: 90afb233561b6c040b317554017ce5fa, type: 2}
 --- !u!4 &1790335982
 Transform:
   m_ObjectHideFlags: 0

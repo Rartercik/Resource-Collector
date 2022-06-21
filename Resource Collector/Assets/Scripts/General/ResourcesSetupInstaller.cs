@@ -7,6 +7,6 @@ public class ResourcesSetupInstaller : MonoInstaller
 
     public override void InstallBindings()
     {
-        Container.Bind<ResourcesSetup>().FromInstance(_resourcesSetup).AsSingle().NonLazy();
+        Container.Bind<ResourcesSetup>().FromScriptableObject(_resourcesSetup).AsSingle().NonLazy();
     }
 }

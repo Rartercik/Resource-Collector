@@ -20,6 +20,7 @@ public class PlayerInteraction : MonoBehaviour, IReceiver, IGiver
     private void Start()
     {
         _giver = GetComponent<ResourceGiver>();
+        _visualization.Initialize(_resourceCapacity);
     }
 
     private void OnTriggerEnter(Collider other)

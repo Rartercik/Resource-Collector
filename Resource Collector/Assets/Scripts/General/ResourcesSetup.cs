@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ResourcesSetup : MonoBehaviour
+[CreateAssetMenu]
+public class ResourcesSetup : ScriptableObject
 {
     [SerializeField] ResourceType[] _keys;
-    [SerializeField] GameObject[] _values;
+    [SerializeField] Material[] _values;
 
-    private Dictionary<ResourceType, GameObject> _resources;
+    private Dictionary<ResourceType, Material> _resources;
 
     private void OnValidate()
     {
-        _resources = new Dictionary<ResourceType, GameObject>();
+        _resources = new Dictionary<ResourceType, Material>();
 
         var distincedKeys = _keys.Distinct().ToArray();
         var resourcesCount = Enum.GetValues(typeof(ResourceType)).Length;
@@ -23,13 +24,8 @@ public class ResourcesSetup : MonoBehaviour
         }
     }
 
-    public GameObject GetPrefabByType(ResourceType type)
+    public Material GetMaterialByType(ResourceType type)
     {
         return _resources[type];
-    }
-
-    public string GetTagByType(ResourceType resourceType)
-    {
-        return _resources[resourceType].tag;
     }
 }
